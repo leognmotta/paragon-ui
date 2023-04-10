@@ -1,16 +1,21 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
+  "globalDependencies": ["tsconfig.json"],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
-    "lint": {
-      "outputs": []
+    "build:fast": {
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
+      "dependsOn": ["^build:fast"]
     },
     "dev": {
       "cache": false
+    },
+    "typecheck": {
+      "cache": false,
+      "dependsOn": ["^typecheck"]
     }
   }
 }
