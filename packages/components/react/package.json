@@ -1,0 +1,32 @@
+{
+  "name": "@paragon-ui/react",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "author": "Leonardo Motta <mail@leomotta.me>",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast -- --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@paragon-ui/button": "workspace:*"
+  },
+  "devDependencies": {
+    "react": "^18.2.0"
+  },
+  "tsup": {
+    "clean": true,
+    "target": "es2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  }
+}
