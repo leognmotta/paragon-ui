@@ -14,6 +14,7 @@
     "lint": "eslint packages/**/**/src --ext .ts,.tsx --config .eslintrc.json --cache",
     "format:check": "prettier --check packages/**/**/src --cache",
     "format:write": "prettier --write packages/**/**/src --cache",
+    "clean": "pnpm -r --parallel exec rimraf dist .turbo *.log node_modules .next",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "postinstall": "tsx scripts/patchJestDom.ts"
@@ -28,6 +29,7 @@
     "@vitest/coverage-c8": "^0.30.0",
     "happy-dom": "^9.1.7",
     "prettier": "^2.6.2",
+    "rimraf": "^5.0.0",
     "tsup": "^6.7.0",
     "tsx": "^3.12.6",
     "turbo": "latest",
