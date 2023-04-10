@@ -1,3 +1,19 @@
 {
-  "extends": ["@paragon-ui/eslint-config/react"]
+  "extends": ["@paragon-ui/eslint-config/react"],
+  "rules": {
+    "no-use-before-define": "off",
+    "react/no-unescaped-entities": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "packages/**/*.ts",
+        "packages/**/*.tsx",
+        "scripts/**/*.ts"
+      ],
+      "parserOptions": {
+        "project": ["tsconfig.json"]
+      }
+    }
+  ]
 }
