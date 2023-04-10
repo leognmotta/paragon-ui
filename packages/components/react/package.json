@@ -5,21 +5,35 @@
   "sideEffects": false,
   "license": "MIT",
   "author": "Leonardo Motta <mail@leomotta.me>",
+  "homepage": "https://github.com/paragon-ui/paragon-ui#readme",
   "files": [
     "dist"
-  ],
+  ],  
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paragon-ui/paragon-ui",
+    "directory": "packages/components/button"
+  },
+  "bugs": {
+    "url": "https://github.com/paragon-ui/paragon-ui/issues"
+  },
   "scripts": {
     "build": "tsup src --dts",
     "build:fast": "tsup src",
+    "typecheck": "tsc --noEmit",
     "dev": "pnpm build:fast -- --watch",
-    "lint": "eslint \"src/**/*.ts*\"",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
-  },
-  "dependencies": {
-    "@paragon-ui/button": "workspace:*"
+    "clean": "rimraf dist .turbo"
   },
   "devDependencies": {
     "react": "^18.2.0"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": ">=18"
   },
   "tsup": {
     "clean": true,
