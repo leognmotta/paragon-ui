@@ -6,10 +6,10 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, React.PropsWithChildren<ButtonProps>>(
-  ({ children, ...theirProps }, forwardedRef) => {
+  ({ children, isToggleActive, ...theirProps }, forwardedRef) => {
     const ourProps = {
       'aria-disabled': theirProps.disabled,
-      'aria-pressed': theirProps.disabled ? undefined : theirProps.isToggleActive,
+      'aria-pressed': theirProps.disabled ? undefined : isToggleActive,
     } as ButtonProps
     const buttonRef = React.useRef<HTMLButtonElement>(null)
 
