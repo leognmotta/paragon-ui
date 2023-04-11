@@ -1,0 +1,36 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[data-element="button"][aria-disabled="true"] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button[data-element="button"][aria-pressed="true"] {
+  background-color: #28a745;
+}
+
+button[data-element="button"][aria-pressed="false"] {
+  background-color: #dc3545;
+}
+
+/* Animation for button press effect */
+button:active {
+  transform: scale(0.95);
+}
