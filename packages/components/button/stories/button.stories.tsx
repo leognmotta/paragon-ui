@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from '../button'
-import type { ButtonProps } from '../button'
+import { Button } from '../src/button'
+import type { ButtonProps } from '../src/button'
 
 import './button.css'
 
