@@ -16,5 +16,9 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
+  viteFinal: (config, options) => {
+    config.css = { devSourcemap: true }
+    return config
+  },
 }
 export default config
