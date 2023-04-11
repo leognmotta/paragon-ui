@@ -31,6 +31,7 @@
     "react": "^18.2.0"
   },
   "dependencies": {
+    "@paragon-ui/use-merge-refs": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=18"
