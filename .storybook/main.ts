@@ -3,7 +3,7 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-vite',
   },
-  stories: ['../packages/components/*/stories/*.stories.tsx'],
+  stories: ['../packages/components/*/src/stories/*.stories.tsx'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',

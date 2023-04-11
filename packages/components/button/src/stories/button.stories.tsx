@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/react'
 
-import { Button } from '../src/button'
+import { Button } from '../button'
 
 const meta: Meta<typeof Button> = {
   title: 'Button/test',
@@ -9,8 +9,4 @@ const meta: Meta<typeof Button> = {
 
 export default meta
 
-export const WithVariants = () => (
-  <div>
-    <Button>Button</Button>
-  </div>
-)
+export const WithVariants = () => <Button>Button</Button>
