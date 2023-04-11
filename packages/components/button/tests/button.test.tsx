@@ -1,7 +1,7 @@
 import { createRef } from 'react'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, fireEvent } from '@testing-library/react'
-import { Button, ButtonProps } from '../button'
+import { Button, ButtonProps } from '../src/button'
 
 describe('Button component', () => {
   // Define test props

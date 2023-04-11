@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 import { renderHook, act } from '@testing-library/react'
-import { mergeRefs, useMergeRefs } from '../index'
+import { mergeRefs, useMergeRefs } from '../src/index'
 import { createRef } from 'react'
 
 describe('mergeRefs', () => {
