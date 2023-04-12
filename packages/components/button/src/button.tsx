@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMergeRefs } from '@paragon-ui/use-merge-refs'
+import { useMergeRefs } from '@paragonui-org/use-merge-refs'
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isToggleActive?: boolean

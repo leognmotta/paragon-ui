@@ -1,5 +1,5 @@
 {
-  "name": "paragon-ui",
+  "name": "paragonui-org",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -20,13 +20,13 @@
     "storybook:serve": "pnpx serve storybook-static",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "turbo run build --filter=@paragon-ui/docs && changeset publish",
+    "release": "turbo run build --filter=@paragonui-org/docs && changeset publish",
     "version:dev": "changeset version --snapshot dev",
-    "release:dev": "turbo run build --filter=@paragon-ui/docs && changeset publish --tag dev"
+    "release:dev": "turbo run build --filter=@paragonui-org/docs && changeset publish --tag dev"
   },
   "dependencies": {
     "@changesets/cli": "^2.26.1",
-    "@paragon-ui/eslint-config": "workspace:*",
+    "@paragonui-org/eslint-config": "workspace:*",
     "@storybook/addon-a11y": "^7.0.4",
     "@storybook/addon-essentials": "^7.0.2",
     "@storybook/addon-interactions": "^7.0.2",

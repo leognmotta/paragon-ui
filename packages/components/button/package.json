@@ -1,5 +1,5 @@
 {
-  "name": "@paragon-ui/button",
+  "name": "@paragonui-org/button",
   "version": "0.0.0",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -31,7 +31,7 @@
     "react": "^18.2.0"
   },
   "dependencies": {
-    "@paragon-ui/use-merge-refs": "workspace:*"
+    "@paragonui-org/use-merge-refs": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=18"

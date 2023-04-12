@@ -1,1 +1,1 @@
-export { Button } from '@paragon-ui/button'
+export { Button } from '@paragonui-org/button'

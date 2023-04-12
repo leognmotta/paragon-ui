@@ -1,4 +1,4 @@
-# @paragon-ui/eslint-config
+# @paragonui-org/eslint-config
 
 ## 1.0.0
 

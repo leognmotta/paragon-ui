@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@paragon-ui/react'
+import { Button } from '@paragonui-org/react'
 
 export default function Home() {
   return (

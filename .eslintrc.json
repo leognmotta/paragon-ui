@@ -1,5 +1,5 @@
 {
-  "extends": ["@paragon-ui/eslint-config/react"],
+  "extends": ["@paragonui-org/eslint-config/react"],
   "rules": {
     "no-use-before-define": "off",
     "react/no-unescaped-entities": "off"

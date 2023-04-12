@@ -1,5 +1,5 @@
 {
-  "name": "@paragon-ui/use-merge-refs",
+  "name": "@paragonui-org/use-merge-refs",
   "version": "0.0.0",
   "main": "src/index.ts",
   "sideEffects": false,

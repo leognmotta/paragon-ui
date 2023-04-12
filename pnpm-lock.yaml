@@ -11,7 +11,7 @@ importers:
       '@changesets/cli':
         specifier: ^2.26.1
         version: 2.26.1
-      '@paragon-ui/eslint-config':
+      '@paragonui-org/eslint-config':
         specifier: workspace:*
         version: link:packages/configs/eslint-config
       '@storybook/addon-a11y':
@@ -113,7 +113,7 @@ importers:
 
   apps/docs:
     dependencies:
-      '@paragon-ui/react':
+      '@paragonui-org/react':
         specifier: workspace:*
         version: link:../../packages/components/react
       next:
@@ -147,7 +147,7 @@ importers:
 
   packages/components/button:
     dependencies:
-      '@paragon-ui/use-merge-refs':
+      '@paragonui-org/use-merge-refs':
         specifier: workspace:*
         version: link:../../hooks/use-merge-refs
     devDependencies:
@@ -157,7 +157,7 @@ importers:
 
   packages/components/react:
     dependencies:
-      '@paragon-ui/button':
+      '@paragonui-org/button':
         specifier: workspace:*
         version: link:../button
     devDependencies:

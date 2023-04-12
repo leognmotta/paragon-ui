@@ -1,5 +1,5 @@
 {
-  "name": "@paragon-ui/react",
+  "name": "@paragonui-org/react",
   "version": "0.0.0",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -31,7 +31,7 @@
     "react": "^18.2.0"
   },
   "dependencies": {
-    "@paragon-ui/button": "workspace:*"
+    "@paragonui-org/button": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=18"

@@ -1,5 +1,5 @@
 {
-  "name": "@paragon-ui/eslint-config",
+  "name": "@paragonui-org/eslint-config",
   "version": "1.0.0",
   "private": false,
   "description": "ESLint configuration used by Paragon UI.",
