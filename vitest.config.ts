@@ -8,6 +8,8 @@ export default defineConfig({
     include: ['packages/**/*.test.{ts,tsx}'],
     coverage: {
       include: ['packages/**/*.test.{ts,tsx}'],
+      provider: 'c8',
+      exclude: ['packages/storybook/'],
     },
   },
 })
